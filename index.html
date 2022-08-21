@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="icon" type="image/png" href="./assets/to-do-list.png">
+    <title>To Do List</title>
+
+</head>
+
+<body onload="loadToDoList()">
+    <main>
+        <header class="title">
+            <h1>To Do List</h1>
+        </header>
+            <div class="container">
+                <h2 id="messageSalutation" class="salutation"></h2>
+                    <h4 id="localDate" class="salutation"></h4>
+                        <h5 id="localClock" class="salutation"></h5>
+                            <input type="text" id="addNameNewTask" placeholder="Digite Nova tarefa">
+                <div class="buttons">   
+                    <button class="addNewTask" id="btnAddNewTask">Adicionar</button>
+                    <button id="delTask">Excluir</button>
+                    <button id="btnClearList">Limpar<img src="./assets/trash.png" alt="Imagem de uma lixeira">
+                    </button>
+                </div>
+            <div class="containerList" id="containerTodoList">
+            </div>
+        </div>
+    </main>
+    
+    <script src="./script/script.js"></script>
+</body>
+</html>
